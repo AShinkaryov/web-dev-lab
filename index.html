@@ -2,12 +2,15 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Capsale - Flex Layout</title>
-    <link rel="stylesheet" href=".//style.css">
+    <title>Capsale</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- ==================== ПЕРВЫЙ ЭКРАН ==================== -->
     <div class="site-canvas">
+        
+        <!-- ХЕДЕР -->
         <header class="header">
             <div class="logo-box">
                 <span class="logo-text">capsale</span>
@@ -28,26 +31,403 @@
             </div>
         </header>
 
-        <main class="hero">
-            <div class="hero-content">
-                <h1>Капсульная одежда <br> <span class="red">ОПТОМ</span> для маркетплейсов и шоу-румов</h1>
-                <p>Зарабатывайте <span class="red-bold">более 300%</span> на наценке с продажи одежды Capsale в своем шоу-руме или маркетплейсе</p>
-                <button class="btn">Получить полный каталог</button>
+        <!-- ОСНОВНОЙ КОНТЕНТ -->
+        <main class="main-wrapper">
+            
+            <!-- ТЕКСТОВЫЙ БЛОК -->
+            <div class="text-block">
+                <h1 class="title">Капсульная одежда<span class="highlight"> ОПТОМ</span><br> для маркетплейсов и шоу-румов</h1>
+                <p class="description">Зарабатывайте <span class="highlight-bold">более 300%</span> на наценке с продажи одежды Capsale<br>в своем шоуруме или маркетплейсе</p>
+                <button class="btn">
+                    <span class="btn-text">Получить полный каталог</span>
+                </button>
             </div>
 
-            <div class="hero-visual">
-                <div class="shape-beige">
-                    <img src="2.png" alt="Model" class="img-main">
-                    <div class="price-tag">
-                        <span class="dot"></span> Цена опт: от 400 р.
+            <!-- ВИЗУАЛЬНЫЙ БЛОК -->
+            <div class="visual-wrapper">
+                <!-- Бежевая фигура -->
+                <div class="shape shape-beige">
+                    <img src="2.png" alt="Модель 1" class="img-main">
+                    <div class="price-tag price-tag-beige">
+                         <span class="dot"></span>
+                         <span class="price-text1">Цена опт:<br>от 400 р.</span>
                     </div>
                 </div>
-                <div class="shape-pink">
-                    <img src="1.png" alt="Side" class="img-side">
+                
+                <!-- Розовая фигура -->
+                <div class="shape shape-pink">
+                    <img src="1.png" alt="Модель 2" class="img-side">
+                    <div class="price-tag2 price-tag-pink">
+                        <span class="dot2"></span>
+                        <span class="price-text2">Цена опт:<br>от 400 р.</span>
+                    </div>
                 </div>
             </div>
+
         </main>
+    </div> <!-- ЗАКРЫВАЕМ ПЕРВЫЙ ЭКРАН ЗДЕСЬ -->
+
+    <!-- ==================== ВТОРОЙ ЭКРАН (БЕЛЫЙ БЛОК) ==================== -->
+    <!-- ==================== ВТОРОЙ ЭКРАН (БЕЛЫЙ БЛОК) ==================== -->
+<div class="white-block">
+    <div class="container-inner">
+        
+        <!-- ЗАГОЛОВОК СЕКЦИИ -->
+        <div class="features-header">
+            <span class="pill-icon"></span>
+            <h2 class="section-title">Почему стоит покупать у нас?</h2>
+        </div>
+
+        <!-- СЕТКА ПРЕИМУЩЕСТВ -->
+        <div class="features-grid">
+            
+            <!-- 1. Левая Верхняя (Белая с рамкой) -->
+            <!-- Координаты: Top 1003, Left 140 -->
+            <div class="feature-card card-tl card-otk">
+                <p>Каждая единица одежды<br>
+                <span class="text-shift">проходит жесткий ОТК (брак </br></span>
+                практически отсутствует)
+                </p>
+
+                <div class="card-icon icon-clipboard"></div>
+            </div>
+            <!-- 2. Центральная (Большая) -->
+            <!-- Координаты: Top 1003, Left 540 -->
+            <div class="feature-card card-center">
+                <div class="card-icon icon-percent"></div>
+                <p>Оптовая цена на Садоводе и у местных производителей на 30% выше, чем у нас. С нами Вы сможете <b>заработать больше</b></p>
+            </div>
+
+            <!-- 3. Правая Верхняя -->
+            <!-- Координаты: Top 1003, Left 940 -->
+            <div class="feature-card card-tr card-assort">
+                <div class="card-icon icon-house"></div>
+                <p>Огромный ассортимент 
+                    <br>(более 200 моделей <b>
+                    <br>в наличии</b>)</p>
+            </div>
+
+            <!-- 4. Левая Нижняя (Доставка - Градиент) -->
+<div class="feature-card card-delivery card-bl-round">
+    <p>
+        <span class="text-red">Доставка</span> в течение <span class="text-red-bold">7-10 дней</span>
+        <br>до вашего склада или 
+        <br>фуллфилмента
+    </p>
+    <div class="card-icon icon-truck"></div>
+</div>
+
+            <!-- 5. Правая Нижняя -->
+            <!-- Координаты: Top 1160, Left 940 -->
+            <div class="feature-card card-br card-trend">
+                <div class="card-icon icon-chart"></div>
+                <p><b>Все модели</b> (цвета и дизайн) одежды <b>в тренде</b>, что гарантирует ваши продажи</p>
+            </div>
+
+        </div>
     </div>
+</div>
+<!-- ==================== КАТАЛОГ ==================== -->
+<div class="catalog-section">
+    <div class="container-inner1">
+        
+        <!-- Заголовок -->
+        <div class="catalog-header">
+            <span class="pill-icon1"></span>
+            <h2 class="catalog-title">Каталог</h2>
+        </div>
+        
+        <!-- Основная часть: Товары + Статистика -->
+        <div class="catalog-wrapper">
+            
+            <!-- Сетка товаров (Левая часть) -->
+            <div class="products-grid">
+                
+                <!-- Товар 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="dress1.jpg" alt="Платье">
+                        <div class="color-dots">
+                            <span class="dot" style="background:#FF5E5E"></span>
+                            <span class="dot" style="background:#222"></span>
+                            <span class="dot" style="background:#fff; border:1px solid #ddd"></span>
+                            <span class="dot" style="background:#4A90E2"></span>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-name">Платье 1</h3>
+                        <div class="product-bottom">
+                            <span class="price">от 400 р./ед</span>
+                            <button class="btn-buy">Купить оптом</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Товар 2 -->
+                <div class="product-card1">
+                    <div class="product-image">
+                        <img src="dress5.jpg" alt="Платье">
+                        <div class="color-dots">
+                            <span class="dot" style="background:#FF5E5E"></span>
+                            <span class="dot" style="background:#222"></span>
+                            <span class="dot" style="background:#fff; border:1px solid #ddd"></span>
+                            <span class="dot" style="background:#4A90E2"></span>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-name">Платье 1</h3>
+                        <div class="product-bottom">
+                            <span class="price">от 400 р./ед</span>
+                            <button class="btn-buy">Купить оптом</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Товар 3 -->
+                <div class="product-card2">
+                    <div class="product-image">
+                        <img src="dress3.jpg" alt="Платье">
+                        <div class="color-dots">
+                            <span class="dot" style="background:#FF5E5E"></span>
+                            <span class="dot" style="background:#222"></span>
+                            <span class="dot" style="background:#fff; border:1px solid #ddd"></span>
+                            <span class="dot" style="background:#4A90E2"></span>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-name">Платье 1</h3>
+                        <div class="product-bottom">
+                            <span class="price">от 400 р./ед</span>
+                            <button class="btn-buy">Купить оптом</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Товар 4 -->
+                <div class="product-card3">
+                    <div class="product-image2">
+                        <img src="dress4.jpg" alt="Платье">
+                        <div class="color-dots">
+                            <span class="dot" style="background:#FF5E5E"></span>
+                            <span class="dot" style="background:#222"></span>
+                            <span class="dot" style="background:#fff; border:1px solid #ddd"></span>
+                            <span class="dot" style="background:#4A90E2"></span>
+                        </div>
+                    </div>
+                    <div class="product-content2">
+                        <h3 class="product-name2">Платье 1</h3>
+                        <div class="product-bottom">
+                            <span class="price">от 400 р./ед</span>
+                            <button class="btn-buy">Купить оптом</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Товар 5 -->
+                <div class="product-card4">
+                    <div class="product-image2">
+                        <img src="dress2.jpg" alt="Платье">
+                        <div class="color-dots">
+                            <span class="dot" style="background:#FF5E5E"></span>
+                            <span class="dot" style="background:#222"></span>
+                            <span class="dot" style="background:#fff; border:1px solid #ddd"></span>
+                            <span class="dot" style="background:#4A90E2"></span>
+                        </div>
+                    </div>
+                    <div class="product-content2">
+                        <h3 class="product-name2">Платье 1</h3>
+                        <div class="product-bottom">
+                            <span class="price">от 400 р./ед</span>
+                            <button class="btn-buy">Купить оптом</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Товар 6 -->
+                <div class="product-card5">
+                    <div class="product-image2 fix-pos">
+                        <img src="dress6.jpg" alt="Платье">
+                        <div class="color-dots">
+                            <span class="dot" style="background:#FF5E5E"></span>
+                            <span class="dot" style="background:#222"></span>
+                            <span class="dot" style="background:#fff; border:1px solid #ddd"></span>
+                            <span class="dot" style="background:#4A90E2"></span>
+                        </div>
+                    </div>
+                    <div class="product-content2">
+                        <h3 class="product-name2">Платье 1</h3>
+                        <div class="product-bottom">
+                            <span class="price">от 400 р./ед</span>
+                            <button class="btn-buy">Купить оптом</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Правая колонка (Статистика) -->
+            <div class="catalog-stats">
+                <div class="stat-item">
+                    <div class="stat-header">
+                        <!-- Это бежевый круг -->
+                        <div class="stat-icon-circle">
+                        <!-- А это твоя картинка внутри -->
+                        <img src="rubel.png" class="stat-icon-image" alt="Деньги">
+                        </div>
+                        <p class="stat-label">
+                            Клиенты зарабатывают
+                        <span class="info-icon">i</span>
+                        </p>
+                    </div>
+                    <p class="stat-value">350т.р.</p>
+                    <p class="stat-subtitle">
+    <span class="arrow"></span>
+    <span class="text-green">каждую</span> 
+    <span class="text-black">неделю</span>
+</p>
+                </div>
+              </div>
+
+        </div>
+
+        <!-- Кнопка Смотреть еще -->
+        <div class="catalog-more">
+            <span class="more-icon">+</span>
+            <span class="more-text">Смотреть еще</span>
+        </div>
+
+    </div>
+</div>
+
+<!-- ==================== БЛОК CTA (ЗАЯВКА) ==================== -->
+<div class="cta-section">
+    <div class="cta-box">
+        
+        <!-- Левая часть: Текст + Форма -->
+        <div class="cta-left">
+            <h2 class="cta-title">Получите ссылку на полный каталог в ваш мессенджер</h2>
+            <div class="cta-row">
+                <input type="tel" class="cta-input" placeholder ="Введите ваш телефон">
+                <button class="cta-btn">Получить каталог</button>
+            </div>
+        </div>
+
+        <!-- Правая часть: Картинка + Фон -->
+        <div class="cta-right">
+            <div class="cta-bg-shape"></div>
+            <img src="woman-shopping.png" alt="Модель с пакетами" class="cta-img">
+        </div>
+
+    </div>
+</div>
+
+<!-- ==================== СЕКЦИЯ О НАС ==================== -->
+<div class="about-section">
+    <div class="container-inner">
+        
+        <!-- Заголовок -->
+        <div class="about-header">
+            <span class="pill-icon4"></span>
+            <h2 class="about-title">О нас</h2>
+        </div>
+
+        <div class="about-wrapper">
+            <!-- Картинка -->
+            <div class="about-image">
+                <img src="founders1.png" alt="Команда">
+            </div>
+
+            <!-- Текст -->
+            <div class="about-text">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ==================== СЕКЦИЯ ДЛЯ КОГО ==================== -->
+<div class="for-whom-section">
+    <div class="container-inner3">
+        
+        <!-- Заголовок -->
+        <div class="for-whom-header">
+            <span class="pill-icon2"></span>
+            <h2 class="for-whom-title">Для кого</h2>
+        </div>
+
+        <!-- Сетка карточек -->
+        <div class="for-whom-grid">
+            
+            <!-- 1. ФИОЛЕТОВАЯ КАРТОЧКА -->
+            <div class="for-whom-card card-purple">
+                <h3 class="card-title title-purple">Для магазинов<br>на маркетплейсах</h3>
+                <ul class="list-purple">
+                    <li>Только трендовые модели одежды и цвета</li>
+                    <li>У нас есть опыт работы на маркетплейсах, поможем заработать</li>
+                    <li>При необходимости отследим, есть ли такой товар уже в продаже</li>
+                    <li>Минимальная партия от 50 т.р.</li>
+                </ul>
+            </div>
+
+            <!-- 2. ЖЕЛТАЯ КАРТОЧКА -->
+            <div class="for-whom-card card-yellow">
+                <h3 class="card-title1 title-yellow">Для шоу-румов</h3>
+                <ul class="list-yellow">
+                    <li>Можете быть уверенными, что <br>у вас не будет конкуренции <br>оффлайн</li>
+                    <li>При необходимости, можем сделать брендирование<br> (лейблы, шильдики)</li>
+                    <li>Наценка выше чем на маркетплейсах и не нужно платить комиссию. Зарабатывайте больше.</li>
+                </ul>
+            </div>
+
+            <!-- 3. РОЗОВАЯ КАРТОЧКА -->
+            <div class="for-whom-card card-pink">
+                <h3 class="card-title2 title-pink">Для брендов<br> одежды</h3>
+                <ul class="list-pink">
+                    <li>Есть свое производство в г.<br>Бишкек. Можем отшить любую<br>модель по запросу</li>
+                    <li>Себестоимость производства в<br> 3 раза ниже, чем в России</li>
+                    <li>Берем ответственность и контроль за исполнением каждого заказа под ключ.</li>
+                    <li>Вы экономите на билетах, проживании, передвижении <br>ит.д.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- ==================== 1. ВОПРОС - ОТВЕТ (С ФОТО) ==================== -->
+<div class="faq-photo-section">
+    <div class="section-header">
+        <span class="pill-icon5"></span>
+        <h2 class="section-title">Вопрос - ответ</h2>
+    </div>
+    
+    <!-- Рамка 1180×678 (сюда потом вставишь картинку) -->
+    <div class="faq-frame">
+        <img src="faq-screen.png" alt="FAQ"> -
+    </div>
+</div>
+
+<!-- ==================== 2. ГАЛЕРЕЯ (ТОЛЬКО ЗАГОЛОВОК) ==================== -->
+<div class="simple-section">
+    <div class="section-header1">
+        <span class="pill-icon5"></span>
+        <h2 class="section-title">Галерея</h2>
+    </div>
+</div>
+
+<!-- ==================== 3. КОНТАКТЫ + ФУТЕР (ТОЛЬКО ЗАГОЛОВОК) ==================== -->
+<div class="simple-section">
+    <div class="section-header2">
+        <span class="pill-icon5"></span>
+        <h2 class="section-title">Контакты + футер</h2>
+    </div>
+</div>
+        
+
+
+
+
+
 
 </body>
 </html>
